@@ -1,0 +1,13 @@
+p {
+    font-size: 18px;
+    
+}
+h1 {
+    color: purple;
+    font-size: 200%;
+    font-weight: bold;
+}
+body {
+    font-family: normal;
+    line-height: 1.5;
+}
