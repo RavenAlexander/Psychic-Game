@@ -1,4 +1,4 @@
-var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",];
+var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 		 var wins = 0;
 		 var losses = 0;
@@ -11,15 +11,16 @@ var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
 
 		 	var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-		 	var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",];
+		 	var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 		 	
 
-			if (letters.indexOf(userGuess) > -1) {
+			if (letters.indexOf(userGuess) < 100) {
 
 				if (userGuess === computerGuess) {
 					wins++;
 					numGuesses = 9;
-					guessChoices = [];
+                    guessChoices = [];
+                    window.alert("You guessed correctly! Well done"); 
 				}
 
 				if (userGuess != computerGuess) {
@@ -37,10 +38,10 @@ var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
 			}
 
             var displayWin = 
-            "<span>" + "<p>Wins: " + wins + "</p>" + "</span>"
+           "<p>Wins: " + wins + "</p>"
 
             var displayLoss =
-            "<span>" + "<p>Losses: " + losses + "</p>" + "</span>" 
+            "<p>Losses: " + losses + "</p>"
 
             var displayGuessLeft =
             "<p>Guesses Left: " + numGuesses + "</p>" 
