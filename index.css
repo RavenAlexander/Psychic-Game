@@ -1,0 +1,29 @@
+body {
+    background-color: powderblue;
+    background-image: url(pexels-cottonbro-studio-7179423.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    
+}
+
+.container {
+    background-color: pink;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 5px solid beige;
+}
+
+h1 { 
+    
+  text-shadow:
+    1px 1px 1px beige,
+    -1px 1px 1px beige,
+    -1px -1px 0 beige,
+    1px -1px 0 beige;
+}
